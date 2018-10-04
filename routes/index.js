@@ -25,6 +25,16 @@ router.post('/login', function(req, res, next) {
         token : token
       })
     }
+    else {
+      res.status(401).json({
+        errorMsg: 'Unauthorized: Username or Password is incorrect'
+      })
+    }
+  }
+  else {
+    res.status(400).json({
+      errorMsg: 'Bad request: Username or Password is not provided'
+    })
   }
 });
 
