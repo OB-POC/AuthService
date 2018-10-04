@@ -38,4 +38,14 @@ router.post('/login', function(req, res, next) {
   }
 });
 
+router.get('/authenticate', function(req, res, next){
+  // console.log(req.headers);
+  var token = req.headers['x-access-token'];
+
+  jwt.verify(token, config.secret , function(err, decodedObj){
+    if (err) return res.status(500).send({ auth: false, message: 'Failed to authenticate token.' });  
+    res.status(200).send(decodedObj);
+  })
+});
+
 module.exports = router;
