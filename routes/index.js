@@ -8,6 +8,7 @@ var config = require('../data/config');
 router.post('/login', function(req, res, next) {
   var username = req.body.username;
   var password = req.body.password;
+  // console.log(req.body,username,password);
   if(username && password){
     var userObj = userData.filter((obj)=>{
       return obj.username == username && obj.password == password;
@@ -43,7 +44,7 @@ router.get('/authenticate', function(req, res, next){
   var token = req.headers['x-access-token'];
 
   jwt.verify(token, config.secret , function(err, decodedObj){
-    if (err) return res.status(500).send({ auth: false, message: 'Failed to authenticate token.' });  
+    if (err) return res.status(500).send({ auth: false, message: 'Failed to authenticate token.' });
     res.status(200).send(decodedObj);
   })
 });
