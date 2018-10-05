@@ -13,6 +13,6 @@ spec:
     spec:
       containers:
         - name: hello-ctr
-          image: vinitkumargoel/lbgpoc_authservice:latest
+          image: vinitkumargoel/lbgpoc_authservice:$BUILD_NUMBER
           ports:
             - containerPort: 3000
