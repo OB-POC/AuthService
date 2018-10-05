@@ -27,7 +27,7 @@ module.exports = {
                         "bankId": "Barclays",
                         "accounts": [
                             {
-                                "aaccountType": "PCA",
+                                "accountType": "PCA",
                                 "accountNumber": "234567 89012345",
                                 "accountTitle": "Platinum Account",
                                 "standingInst": 500,
@@ -99,10 +99,11 @@ module.exports = {
                             accountType: 'M',
                             accountNumber: '567890 1234567890',
                             accountTitle: 'Home Loan',
-                            creditLimit: 3000,
-                            availableCredit: 1000,
+                            minMonthlyPayment: 150,
+                            remainingFullTerm: '2Y 3M',
                             totalBalanceDue: 2000,
                             minBalanceDue: 2000,
+                            interestRate: 2.5,
                             apr: 30,
                             dueDate: new Date().setDate(new Date().getDate()+20)                         
                         }
@@ -176,8 +177,8 @@ module.exports = {
                             accountNumber: '456789 0123456789',
                             accountTitle: 'Low Rate',
                             creditLimit: 4000,
-                            availableCredit: 500,
-                            totalBalanceDue: 3500,
+                            availableCredit: 2000,
+                            totalBalanceDue: 2000,
                             minBalanceDue: 500,
                             apr: 35,
                             dueDate: new Date().setDate(new Date().getDate()+12)                         
@@ -209,10 +210,11 @@ module.exports = {
                             accountType: 'M',
                             accountNumber: '567890 1234567890',
                             accountTitle: 'Home Loan',
-                            creditLimit: 3000,
-                            availableCredit: 1000,
+                            minMonthlyPayment: 150,
+                            remainingFullTerm: '1Y 10M',
                             totalBalanceDue: 2000,
                             minBalanceDue: 2000,
+                            interestRate: 2.5,
                             apr: 25,
                             dueDate: new Date().setDate(new Date().getDate()+20)                         
                         }
