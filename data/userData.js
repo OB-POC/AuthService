@@ -14,11 +14,11 @@ module.exports = {
                                 "accountType": "PCA",
                                 "accountNumber": "123456 78901234",
                                 "accountTitle": "Classic Account",
-                                "standingInst": 300,
-                                "balance": 1500,
-                                "minBalance": 300,
+                                "standingInst": 500,
+                                "balance": 2500,
+                                "minBalance": 100,
                                 "interestRate": 0 ,
-                                "availableBalance":900
+                                "availableBalance":1900
                             }
                         ]
                     },
@@ -30,11 +30,11 @@ module.exports = {
                                 "aaccountType": "PCA",
                                 "accountNumber": "234567 89012345",
                                 "accountTitle": "Platinum Account",
-                                "standingInst": 1000,
-                                "balance": 5000,
-                                "minBalance": 300,
+                                "standingInst": 500,
+                                "balance": 2000,
+                                "minBalance": 100,
                                 "interestRate": 0,
-                                "availableBalance":3700
+                                "availableBalance":1400
                             }
                         ]
                     },
@@ -46,11 +46,11 @@ module.exports = {
                                 "accountType": "Savings",
                                 "accountNumber": "345678 90123456",
                                 "accountTitle": "Easy Saver",
-                                "standingInst": 700,
+                                "standingInst": 500,
                                 "balance": 5000,
-                                "minBalance": 400,
+                                "minBalance": 100,
                                 "interestRate": 1,
-                                "availableBalance":3900
+                                "availableBalance":4400
                             }
                         ]
                     }
@@ -65,12 +65,12 @@ module.exports = {
                             accountType: 'CC',
                             accountNumber: '456789 0123456789',
                             accountTitle: 'Low Rate',
-                            creditLimit: 20000,
-                            availableCredit: 15000,
-                            totalBalanceDue: 5000,
+                            creditLimit: 3000,
+                            availableCredit: 1000,
+                            totalBalanceDue: 2000,
                             minBalanceDue: 500,
-                            apr: 30,
-                            dueDate: new Date()                         
+                            apr: 35,
+                            dueDate: new Date().setDate(new Date().getDate()+5)                         
                         }
                     ]
                 },
@@ -82,12 +82,12 @@ module.exports = {
                             accountType: 'CC',
                             accountNumber: '567890 1234567890',
                             accountTitle: 'No Fee 0% Balance Transfer',
-                            creditLimit: 15000,
-                            availableCredit: 7000,
-                            totalBalanceDue: 8000,
-                            minBalanceDue: 3000,
-                            apr: 26,
-                            dueDate: new Date()                         
+                            creditLimit: 4000,
+                            availableCredit: 1500,
+                            totalBalanceDue: 2500,
+                            minBalanceDue: 400,
+                            apr: 25,
+                            dueDate: new Date().setDate(new Date().getDate()+12)                          
                         }
                     ]
                 },
@@ -99,12 +99,122 @@ module.exports = {
                             accountType: 'M',
                             accountNumber: '567890 1234567890',
                             accountTitle: 'Home Loan',
-                            creditLimit: 15000,
-                            availableCredit: 8000,
-                            totalBalanceDue: 7000,
+                            creditLimit: 3000,
+                            availableCredit: 1000,
+                            totalBalanceDue: 2000,
                             minBalanceDue: 2000,
-                            apr: 24,
-                            dueDate: new Date()                         
+                            apr: 30,
+                            dueDate: new Date().setDate(new Date().getDate()+20)                         
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            username: 'john',
+            password: 'doe',
+            UIN: 'UIN-xxxxx',
+            creditScore: 650,
+            debitBankAccountDetails: [
+                    {
+                        "bankName": "BOS",
+                        "bankId": "BBOOSS",
+                        "accounts": [
+                            {
+                                "accountType": "PCA",
+                                "accountNumber": "678901 23456789",
+                                "accountTitle": "Classic Account",
+                                "standingInst": 300,
+                                "balance": 2300,
+                                "minBalance": 100,
+                                "interestRate": 0 ,
+                                "availableBalance":1900
+                            }
+                        ]
+                    },
+                    {
+                        "bankName": "HHSSBBCC",
+                        "bankId": "HHSSBBCC",
+                        "accounts": [
+                            {
+                                "aaccountType": "PCA",
+                                "accountNumber": "234567 89012345",
+                                "accountTitle": "Platinum Account",
+                                "standingInst": 500,
+                                "balance": 2000,
+                                "minBalance": 100,
+                                "interestRate": 0,
+                                "availableBalance":1400
+                            }
+                        ]
+                    },
+                    {
+                        "bankName": "Monzo",
+                        "bankId": "Monzo",
+                        "accounts": [
+                            {
+                                "accountType": "Savings",
+                                "accountNumber": "345678 90123456",
+                                "accountTitle": "Easy Saver",
+                                "standingInst": 1700,
+                                "balance": 5000,
+                                "minBalance": 300,
+                                "interestRate": 1,
+                                "availableBalance":3000
+                            }
+                        ]
+                    }
+            
+            ],
+            creditBankAccountDetails: [
+                {
+                    bankName: 'Capital One',
+                    bankId: 'CCaappiittaall  OOnnee',
+                    accounts: [
+                        {
+                            accountType: 'CC',
+                            accountNumber: '456789 0123456789',
+                            accountTitle: 'Low Rate',
+                            creditLimit: 4000,
+                            availableCredit: 500,
+                            totalBalanceDue: 3500,
+                            minBalanceDue: 500,
+                            apr: 35,
+                            dueDate: new Date().setDate(new Date().getDate()+12)                         
+                        }
+                    ]
+                },
+                {
+                    bankName: 'Barclays',
+                    bankId: 'BBaarrccllaayyss',
+                    accounts: [
+                        {
+                            accountType: 'CC',
+                            accountNumber: '567890 1234567890',
+                            accountTitle: 'No Fee 0% Balance Transfer',
+                            creditLimit: 4000,
+                            availableCredit: 1500,
+                            totalBalanceDue: 2500,
+                            minBalanceDue: 400,
+                            apr: 30,
+                            dueDate: new Date().setDate(new Date().getDate()+5)                          
+                        }
+                    ]
+                },
+                {
+                    bankName: 'Citi Bank',
+                    bankId: 'CCiittii  BBaannkk',
+                    accounts: [
+                        {
+                            accountType: 'M',
+                            accountNumber: '567890 1234567890',
+                            accountTitle: 'Home Loan',
+                            creditLimit: 3000,
+                            availableCredit: 1000,
+                            totalBalanceDue: 2000,
+                            minBalanceDue: 2000,
+                            apr: 25,
+                            dueDate: new Date().setDate(new Date().getDate()+20)                         
                         }
                     ]
                 }
