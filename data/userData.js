@@ -12,13 +12,13 @@ module.exports = {
                         "accounts": [
                             {
                                 "accountType": "SB",
-                                "accountNumber": "123456 78901234",
+                                "accountNumber": "XXXXXX XXXX6789",
                                 "accountTitle": "Every Day Saver",
-                                "standingInst": 2000,
-                                "balance": 4000,
-                                "minBalance": 1000,
+                                "standingInst": '2,000',
+                                "balance": '4,000',
+                                "minBalance": '1,000',
                                 "interestRate": 0.2 ,
-                                "availableBalance":1000
+                                "availableBalance":'1,000'
                             }
                         ]
                     },
@@ -28,13 +28,13 @@ module.exports = {
                         "accounts": [
                             {
                                 "accountType": "PCA",
-                                "accountNumber": "234567 89012345",
+                                "accountNumber": "XXXXXX XXXX6123",
                                 "accountTitle": "HSBC Advance Bank Account",
-                                "standingInst": 1200,
-                                "balance": 4000,
+                                "standingInst": '1,200',
+                                "balance": '4,000',
                                 "minBalance": 200,
-                                "interestRate": 0.5,
-                                "availableBalance":2600
+                                "interestRate": 0.1,
+                                "availableBalance":'2,600'
                             }
                         ]
                     },
@@ -44,13 +44,13 @@ module.exports = {
                         "accounts": [
                             {
                                 "accountType": "SB",
-                                "accountNumber": "345678 90123456",
+                                "accountNumber": "XXXXXX XXXX3222",
                                 "accountTitle": "Easy Saver",
                                 "standingInst": 800,
-                                "balance": 6000,
+                                "balance": '6,000',
                                 "minBalance": 200,
                                 "interestRate": 0.25,
-                                "availableBalance":5000
+                                "availableBalance":'5,000'
                             }
                         ]
                     }
@@ -63,11 +63,11 @@ module.exports = {
                     accounts: [
                         {
                             accountType: 'CC',
-                            accountNumber: '456789 0123456789',
+                            accountNumber: 'XXXXXX XXXXXX6789',
                             accountTitle: 'Chase Freedom Unlimited Credit Card',
-                            creditLimit: 3000,
-                            availableCredit: 1200,
-                            totalBalanceDue: 1800,
+                            creditLimit: '3,000',
+                            availableCredit: '1,200',
+                            totalBalanceDue: '1,800',
                             minBalanceDue: 30,
                             apr: 25.49,
                             dueDate: new Date().setDate(new Date().getDate()+5)                         
@@ -80,30 +80,30 @@ module.exports = {
                     accounts: [
                         {
                             accountType: 'CC',
-                            accountNumber: '567890 1234567890',
+                            accountNumber: 'XXXXXX XXXXXX7890',
                             accountTitle: 'RBS Unlimited Credit Card',
-                            creditLimit: 4000,
-                            availableCredit: 3800,
+                            creditLimit: '4,000',
+                            availableCredit: '3,800',
                             totalBalanceDue: 200,
                             minBalanceDue: 100,
                             apr: 19.94,
-                            dueDate: new Date().setDate(new Date().getDate()+12)                          
+                            dueDate: new Date().setDate(new Date().getDate()+5)                          
                         }
                     ]
                 },
                 {
-                    bankName: 'Monzo',
-                    bankId: 'MMoonnzzoo',
+                    bankName: 'Barclays',
+                    bankId: 'BBaarrccllaayyss',
                     accounts: [
                         {
                             accountType: 'M',
-                            accountNumber: '567890 1234567890',
-                            accountTitle: 'Home Loan',
-                            minMonthlyPayment: 900,
-                            remainingFullTerm: '0Y 5M',
-                            totalBalanceDue: 6000,
-                            interestRate: 2.90,
-                            dueDate: new Date().setDate(new Date().getDate()+20)                         
+                            accountNumber: 'XXXXXX XXXXXX7890',
+                            accountTitle: '2 Years Fixed Reward',
+                            minMonthlyPayment: '2,000',
+                            remainingFullTerm: '2Y 1M',
+                            totalBalanceDue: '50,000',
+                            interestRate: 3.3,
+                            dueDate: new Date().setDate(new Date().getDate()+5)                         
                         }
                     ]
                 }
@@ -121,13 +121,13 @@ module.exports = {
                         "accounts": [
                             {
                                 "accountType": "SB",
-                                "accountNumber": "678901 23456789",
+                                "accountNumber": "XXXXXX XXXX6789",
                                 "accountTitle": "Every Day Saver",
-                                "standingInst": 1000,
-                                "balance": 4000,
-                                "minBalance": 500,
+                                "standingInst": '1,000',
+                                "balance": '2,100',
+                                "minBalance": 100,
                                 "interestRate": 0.20 ,
-                                "availableBalance":2500
+                                "availableBalance":'1,000'
                             }
                         ]
                     },
@@ -137,13 +137,13 @@ module.exports = {
                         "accounts": [
                             {
                                 "aaccountType": "PCA",
-                                "accountNumber": "234567 89012345",
+                                "accountNumber": "XXXXXX XXXX2345",
                                 "accountTitle": "HSBC Advance Bank Account",
                                 "standingInst": 600,
-                                "balance": 3000,
-                                "minBalance": 300,
-                                "interestRate": 0.5,
-                                "availableBalance":2100
+                                "balance": '4,000',
+                                "minBalance": 200,
+                                "interestRate": 0.10,
+                                "availableBalance":'3,200'
                             }
                         ]
                     },
@@ -153,13 +153,13 @@ module.exports = {
                         "accounts": [
                             {
                                 "accountType": "SB",
-                                "accountNumber": "345678 90123456",
+                                "accountNumber": "XXXXXX XXXX3456",
                                 "accountTitle": "Easy Saver",
-                                "standingInst": 400,
-                                "balance": 4000,
-                                "minBalance": 100,
+                                "standingInst": 200,
+                                "balance": '1,500',
+                                "minBalance": 200,
                                 "interestRate": 0.25,
-                                "availableBalance":3500
+                                "availableBalance":'1,100'
                             }
                         ]
                     }
@@ -172,14 +172,14 @@ module.exports = {
                     accounts: [
                         {
                             accountType: 'CC',
-                            accountNumber: '456789 0123456789',
+                            accountNumber: 'XXXXXX XXXXXX6789',
                             accountTitle: 'Chase Freedom Unlimited Credit Card',
-                            creditLimit: 3000,
-                            availableCredit: 200,
-                            totalBalanceDue: 2800,
-                            minBalanceDue: 30,
+                            creditLimit: '3,000',
+                            availableCredit: 100,
+                            totalBalanceDue: '2,900',
+                            minBalanceDue: 50,
                             apr: 25.49,
-                            dueDate: new Date().setDate(new Date().getDate()+12)                         
+                            dueDate: new Date().setDate(new Date().getDate()+5)                         
                         }
                     ]
                 },
@@ -189,30 +189,30 @@ module.exports = {
                     accounts: [
                         {
                             accountType: 'CC',
-                            accountNumber: '567890 1234567890',
+                            accountNumber: 'XXXXXX XXXXXX7890',
                             accountTitle: 'Classic Credit Card',
-                            creditLimit: 1200,
-                            availableCredit: 800,
-                            totalBalanceDue: 400,
+                            creditLimit: '4,000',
+                            availableCredit: '2,000',
+                            totalBalanceDue: '2,000',
                             minBalanceDue: 100,
-                            apr: 27.9,
+                            apr: 27.10,
                             dueDate: new Date().setDate(new Date().getDate()+5)                          
                         }
                     ]
                 },
                 {
-                    bankName: 'Monzo',
-                    bankId: 'MMoonnzzoo',
+                    bankName: 'Barclays',
+                    bankId: 'BBaarrccllaayyss',
                     accounts: [
                         {
                             accountType: 'M',
-                            accountNumber: '567890 1234567890',
-                            accountTitle: 'Home Loan',
-                            minMonthlyPayment: 900,
-                            remainingFullTerm: '0Y 5M',
-                            totalBalanceDue: 6000,
-                            interestRate: 2.9,
-                            dueDate: new Date().setDate(new Date().getDate()+20)                         
+                            accountNumber: 'XXXXXX XXXXXX7890',
+                            accountTitle: '2 Years Fixed Reward',
+                            minMonthlyPayment: '2,000',
+                            remainingFullTerm: '2Y 1M',
+                            totalBalanceDue: '50,000',
+                            interestRate: 3.3,
+                            dueDate: new Date().setDate(new Date().getDate()+5)                         
                         }
                     ]
                 }
