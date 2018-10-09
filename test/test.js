@@ -8,7 +8,7 @@ let authentication_token = ''
 var container = request.agent(require('../app'));
 
 describe('Auth service project test',function(){
-    describe('1.A node js server acting as a RESTful API accepting a POST request with body containing username and password ',function(){
+    xdescribe('1.A node js server acting as a RESTful API accepting a POST request with body containing username and password ',function(){
         it('and returning a token in JSON format',function(done){
             console.log(host_url)
             container
