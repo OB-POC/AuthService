@@ -58,18 +58,18 @@ module.exports = {
             ],
             creditBankAccountDetails: [
                 {
-                    bankName: 'JP Morgan Chase',
-                    bankId: 'JJPP  MMoorrggaann  CChhaassee',
+                    bankName: 'NatWest',
+                    bankId: 'NNaattWWeesstt',
                     accounts: [
                         {
                             accountType: 'CC',
                             accountNumber: 'XXXXXX XXXXXX6789',
-                            accountTitle: 'Chase Freedom Unlimited Credit Card',
+                            accountTitle: 'Reward Black Credit Card',
                             creditLimit: '3,000',
                             availableCredit: '1,200',
                             totalBalanceDue: '1,800',
                             minBalanceDue: 30,
-                            apr: 25.49,
+                            apr: 37.10,
                             dueDate: new Date().setDate(new Date().getDate()+5)                         
                         }
                     ]
@@ -83,8 +83,8 @@ module.exports = {
                             accountNumber: 'XXXXXX XXXXXX7890',
                             accountTitle: 'RBS Unlimited Credit Card',
                             creditLimit: '4,000',
-                            availableCredit: '3,800',
-                            totalBalanceDue: 200,
+                            availableCredit: '2,800',
+                            totalBalanceDue: '1,200',
                             minBalanceDue: 100,
                             apr: 19.94,
                             dueDate: new Date().setDate(new Date().getDate()+5)                          
@@ -99,8 +99,8 @@ module.exports = {
                             accountType: 'M',
                             accountNumber: 'XXXXXX XXXXXX7890',
                             accountTitle: '2 Years Fixed Reward',
-                            minMonthlyPayment: '2,000',
-                            remainingFullTerm: '2Y 1M',
+                            minMonthlyPayment: '800',
+                            remainingFullTerm: '5Y 3M',
                             totalBalanceDue: '50,000',
                             interestRate: 3.3,
                             dueDate: new Date().setDate(new Date().getDate()+5)                         
@@ -123,27 +123,27 @@ module.exports = {
                                 "accountType": "SB",
                                 "accountNumber": "XXXXXX XXXX6789",
                                 "accountTitle": "Every Day Saver",
-                                "standingInst": '1,000',
+                                "standingInst": '100',
                                 "balance": '2,100',
                                 "minBalance": 100,
                                 "interestRate": 0.20 ,
-                                "availableBalance":'1,000'
+                                "availableBalance":'1,900'
                             }
                         ]
                     },
                     {
-                        "bankName": "HHSSBBCC",
+                        "bankName": "HSBC",
                         "bankId": "HHSSBBCC",
                         "accounts": [
                             {
                                 "aaccountType": "PCA",
                                 "accountNumber": "XXXXXX XXXX2345",
                                 "accountTitle": "HSBC Advance Bank Account",
-                                "standingInst": 600,
+                                "standingInst": '1,100',
                                 "balance": '4,000',
                                 "minBalance": 200,
                                 "interestRate": 0.10,
-                                "availableBalance":'3,200'
+                                "availableBalance":'2,700'
                             }
                         ]
                     },
@@ -155,11 +155,11 @@ module.exports = {
                                 "accountType": "SB",
                                 "accountNumber": "XXXXXX XXXX3456",
                                 "accountTitle": "Easy Saver",
-                                "standingInst": 200,
+                                "standingInst": '1,100',
                                 "balance": '1,500',
                                 "minBalance": 200,
                                 "interestRate": 0.25,
-                                "availableBalance":'1,100'
+                                "availableBalance":'200'
                             }
                         ]
                     }
@@ -167,25 +167,25 @@ module.exports = {
             ],
             creditBankAccountDetails: [
                 {
-                    bankName: 'JP Morgan Chase',
-                    bankId: 'JJPP  MMoorrggaann  CChhaassee',
+                    bankName: 'NatWest',
+                    bankId: 'NNaattWWeesstt',
                     accounts: [
                         {
                             accountType: 'CC',
                             accountNumber: 'XXXXXX XXXXXX6789',
-                            accountTitle: 'Chase Freedom Unlimited Credit Card',
+                            accountTitle: 'Reward Credit card',
                             creditLimit: '3,000',
                             availableCredit: 100,
                             totalBalanceDue: '2,900',
                             minBalanceDue: 50,
-                            apr: 25.49,
+                            apr: 23.70,
                             dueDate: new Date().setDate(new Date().getDate()+5)                         
                         }
                     ]
                 },
                 {
-                    bankName: 'Bank of Scotland',
-                    bankId: 'BBaannkk  ooff  SSccoottllaanndd',
+                    bankName: 'RBS',
+                    bankId: 'RRBBSS',
                     accounts: [
                         {
                             accountType: 'CC',
@@ -208,8 +208,8 @@ module.exports = {
                             accountType: 'M',
                             accountNumber: 'XXXXXX XXXXXX7890',
                             accountTitle: '2 Years Fixed Reward',
-                            minMonthlyPayment: '2,000',
-                            remainingFullTerm: '2Y 1M',
+                            minMonthlyPayment: '800',
+                            remainingFullTerm: '5Y 3M',
                             totalBalanceDue: '50,000',
                             interestRate: 3.3,
                             dueDate: new Date().setDate(new Date().getDate()+5)                         
