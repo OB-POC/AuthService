@@ -8,15 +8,11 @@ var app = require('../app');
 var debug = require('debug')('authservice:server');
 var http = require('http');
 
-const {
-  port: serverPort
-} = require("../config.json");
-
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(serverPort);
+var port = 3000;
 app.set('port', port);
 
 /**
@@ -91,4 +87,5 @@ function onListening() {
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
+  console.log('Auth service started...');
 }
